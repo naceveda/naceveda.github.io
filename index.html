@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCP Buddy</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+       
+           
+        
+
+        <div class="search-and-signs">
+
+            
+            <div class="searchbar">
+                <form>
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="" id="search-item" placeholder="Search" onkeyup="search()">
+                </form>
+            
+            </div>
+        
+        
+        
+            <section class="container">
+              
+                          
+        
+                <div class="sign-list" id="sign-list">
+        
+                    <div class="sign">
+                        <img src="img/MUTCD_W20-1.svg" alt="">
+                        <div class="details">
+                            <h3>W20-1</h3>
+                            <h6 style="visibility: hidden"> ROAD WORK AHEAD W20-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW20-1.svg" alt="">
+                        <div class="details">
+                            <h3>W20-1</h3>
+                            <h6 style="visibility: hidden"> ROAD WORK 1000 W20-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_G20-2.svg" alt="">
+                        <div class="details">
+                            <h3>G20-2</h3>
+                            <h6 style="visibility: hidden"> END ROAD WORK G20-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W21-5bR.svg" alt="">
+                        <div class="details">
+                            <h3>W21-5b (R)</h3>
+                            <h6 style="visibility: hidden"> RIGHT SHOULDER CLOSED AHEAD W21-5b (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W21-5bL.svg" alt="">
+                        <div class="details">
+                            <h3>W21-5b (L)</h3>
+                            <h6 style="visibility: hidden"> LEFT SHOULDER CLOSED AHEAD W21-5b (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW21-5.svg" alt="">
+                        <div class="details">
+                            <h3>W21-5</h3>
+                            <h6 style="visibility: hidden"> SHOULDER WORK W21-5 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/C30A.svg" alt="">
+                        <div class="details">
+                            <h3>C30A(CA)</h3>
+                            <h6 style="visibility: hidden"> SHOULDER CLOSED C30A (CA)</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW5-1.svg" alt="">
+                        <div class="details">
+                            <h3>W5-1</h3>
+                            <h6 style="visibility: hidden"> ROAD NARROWS W5-1 </h6>                            
+                        </div>
+                    </div>
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD-CA_C12.svg" alt="">
+                        <div class="details">
+                            <h3>C12 (CA)</h3>
+                            <h6 style="visibility: hidden"> NARROW LANE C12 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W1-3L.svg" alt="">
+                        <div class="details">
+                            <h3>W1-3 (L)</h3>
+                            <h6 style="visibility: hidden"> SHIFT LEFT W1-3 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW1-3R.svg" alt="">
+                        <div class="details">
+                            <h3>W1-3 (R)</h3>
+                            <h6 style="visibility: hidden"> SHIFT RIGHT W1-3 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW1-4L.svg" alt="">
+                        <div class="details">
+                            <h3>W1-4 (L)</h3>
+                            <h6 style="visibility: hidden"> SHIFT LEFT W1-4 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW1-4R.svg" alt="">
+                        <div class="details">
+                            <h3>W1-4 (R)</h3>
+                            <h6 style="visibility: hidden"> SHIFT RIGHT W1-4 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    
+                    <div class="sign">
+                        <img src="img/W20-5R - C20-R.svg" alt="">
+                        <div class="details">
+                            <h3>W20-5 , C20 (R) </h3>
+                            <h6 style="visibility: hidden"> ONE RIGHT LANE CLOSE AHEAD (R) W20-5 C20 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/W20-5R - C20-2R.svg" alt="">
+                        <div class="details">
+                            <h3>W20-5 , C20 (2R) </h3>
+                            <h6 style="visibility: hidden"> TWO RIGHT LANE CLOSE AHEAD (R) W20-5 C20 (2R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/W20-5L - C20-L.svg" alt="">
+                        <div class="details">
+                            <h3>W20-5 , C20 (L) </h3>
+                            <h6 style="visibility: hidden"> ONE LEFT LANE CLOSE AHEAD (L) W20-5 C20 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/W20-5L - C20-2L.svg" alt="">
+                        <div class="details">
+                            <h3>W20-5 , C20 (2L) </h3>
+                            <h6 style="visibility: hidden"> TWO LEFT LANE CLOSE AHEAD (L) W20-5 C20 (2L) </h6>                            
+                        </div>
+                    </div>
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_CW4-2R.svg" alt="">
+                        <div class="details">
+                            <h3>W4-2 (R) </h3>
+                            <h6 style="visibility: hidden"> PORKCHOP RIGHT MERGE W4-2 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW4-2L.svg" alt="">
+                        <div class="details">
+                            <h3>W4-2 (L) </h3>
+                            <h6 style="visibility: hidden"> PORKCHOP LEFT MERGE W4-2 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/C30.svg" alt="">
+                        <div class="details">
+                            <h3>C30 (CA) </h3>
+                            <h6 style="visibility: hidden"> LANE CLOSED C30 (CA) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/W20-5 - C20 - BIKE.svg" alt="">
+                        <div class="details">
+                            <h3>W20-5 , C20 BIKE </h3>
+                            <h6 style="visibility: hidden"> BIKE LANE CLOSE AHEAD W20-5 C20  </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/C30 - BIKE.svg" alt="">
+                        <div class="details">
+                            <h3>C30 BIKE (CA) </h3>
+                            <h6 style="visibility: hidden">BIKE LANE CLOSED C30 BIKE (CA) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W16-1P.svg" alt="">
+                        <div class="details">
+                            <h3> W16-1p </h3>
+                            <h6 style="visibility: hidden"> W16-1p SHARE THE ROAD </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W11-1.svg" alt="">
+                        <div class="details">
+                            <h3>W11-1 </h3>
+                            <h6 style="visibility: hidden"> BIKE W11-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/SC11 - BIKE.svg" alt="">
+                        <div class="details">
+                            <h3>SC11 BIKE </h3>
+                            <h6 style="visibility: hidden"> BIKE LANE CLOSED SC11 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-11.svg" alt="">
+                        <div class="details">
+                            <h3>R4-11 </h3>
+                            <h6 style="visibility: hidden"> BIKE MAY USE FULL LANE R4-11 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/W20-3.svg" alt="">
+                        <div class="details">
+                            <h3>W20-3 </h3>
+                            <h6 style="visibility: hidden"> ROAD CLOSED AHEAD W20-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W20-3_(temporary).svg" alt="">
+                        <div class="details">
+                            <h3>W20-3 </h3>
+                            <h6 style="visibility: hidden"> ROAD CLOSED 1000 W20-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/W20-4.svg" alt="">
+                        <div class="details">
+                            <h3>W20-4</h3>
+                            <h6 style="visibility: hidden"> ONE LANE ROAD AHEAD W20-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW20-4.svg" alt="">
+                        <div class="details">
+                            <h3>W20-4</h3>
+                            <h6 style="visibility: hidden"> ONE LANE ROAD 1000 W20-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW20-7 - C9A.svg" alt="">
+                        <div class="details">
+                            <h3>W20-7, C9A</h3>
+                            <h6 style="visibility: hidden"> FLAGGER W20-7 C9A </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW3-4.svg" alt="">
+                        <div class="details">
+                            <h3>W3-4</h3>
+                            <h6 style="visibility: hidden"> BE PREPARED TO STOP W3-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW1-6L.svg" alt="">
+                        <div class="details">
+                            <h3>W1-6 (L)</h3>
+                            <h6 style="visibility: hidden"> LEFT ARROW MERGE W1-6 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW1-6R.svg" alt="">
+                        <div class="details">
+                            <h3>W1-6 (R)</h3>
+                            <h6 style="visibility: hidden"> RIGHT ARROW MERGE W1-6 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-7R.svg" alt="">
+                        <div class="details">
+                            <h3>R3-7 (R)</h3>
+                            <h6 style="visibility: hidden"> RIGHT LANE MUST TURN RIGHT R3-7 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-7L.svg" alt="">
+                        <div class="details">
+                            <h3>R3-7L</h3>
+                            <h6 style="visibility: hidden"> LEFT LANE MUST TURN RIGHT R3-7 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-4.svg" alt="">
+                        <div class="details">
+                            <h3>R4-4</h3>
+                            <h6 style="visibility: hidden"> BEGIN RIGHT TURN YIELD TO BIKES R4-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R10-15R.svg" alt="">
+                        <div class="details">
+                            <h3>R10-15 (R)</h3>
+                            <h6 style="visibility: hidden"> RIGHT TURNING VEHICLES YIELD TO PEDESTRIAN R10-15 (R)  </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R10-15L.svg" alt="">
+                        <div class="details">
+                            <h3>R10-15 (L)</h3>
+                            <h6 style="visibility: hidden"> LEFT TURNING VEHICLES YIELD TO PEDESTRIAN R10-15 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW12-1.svg" alt="">
+                        <div class="details">
+                            <h3>W12-1</h3>
+                            <h6 style="visibility: hidden"> DOUBLE ARROW SPLIT DIVERGE W12-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R11-2.svg" alt="">
+                        <div class="details">
+                            <h3>R11-2</h3>
+                            <h6 style="visibility: hidden"> ROAD CLOSED R11-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R11-4.svg" alt="">
+                        <div class="details">
+                            <h3>R11-4</h3>
+                            <h6 style="visibility: hidden"> ROAD CLOSED TO THRU TRAFFIC R11-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD-CA_R60B-1.svg" alt="">
+                        <div class="details">
+                            <h3>R60B-1</h3>
+                            <h6 style="visibility: hidden"> OPTIONAL MOVEMENT LEFT OR RIGHT R60B-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W20-2.svg" alt="">
+                        <div class="details">
+                            <h3>W20-2</h3>
+                            <h6 style="visibility: hidden"> DETOUR AHEAD W20-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-10L.svg" alt="">
+                        <div class="details">
+                            <h3>M4-10(L)</h3>
+                            <h6 style="visibility: hidden"> DETOUR LEFT M4-10 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-10R.svg" alt="">
+                        <div class="details">
+                            <h3>M4-10(R)</h3>
+                            <h6 style="visibility: hidden"> DETOUR RIGHT M4-10 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/US_DOT_Signs-M4-8A-Detour_End.png" alt="">
+                        <div class="details">
+                            <h3>M4-8a</h3>
+                            <h6 style="visibility: hidden"> end detour m4-8a </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9L.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9 (L)</h3>
+                            <h6 style="visibility: hidden"> DETOUR LEFT M4-9 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9R.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9 (R)</h3>
+                            <h6 style="visibility: hidden"> DETOUR RIGHT M4-9 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9aL.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9a (L)</h3>
+                            <h6 style="visibility: hidden"> DETOUR BIKE PEDESTRIAN LEFT  M4-9A (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9aR.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9a (R)</h3>
+                            <h6 style="visibility: hidden"> DETOUR  BIKE PEDESTRIAN RIGHT  M4-9A (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9bL.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9b (L)</h3>
+                            <h6 style="visibility: hidden"> DETOUR PEDESTRIAN LEFT M4-9B (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9bR.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9b (R)</h3>
+                            <h6 style="visibility: hidden"> DETOUR PEDESTRIAN RIGHT M4-9B (R) </h6>                            
+                        </div>
+                    </div>
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9cL.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9c (L)</h3>
+                            <h6 style="visibility: hidden"> DETOUR BIKE LEFT M4-9C (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_M4-9cR.svg" alt="">
+                        <div class="details">
+                            <h3>M4-9c (R)</h3>
+                            <h6 style="visibility: hidden"> DETOUR BIKE RIGHT M4-9C (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R9-3 COPYy.png" alt="">
+                        <div class="details">
+                            <h3>R9-3</h3>
+                            <h6 style="visibility: hidden"> NO PEDESTRIAN CROSSING R9-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R9-9.svg" alt="">
+                        <div class="details">
+                            <h3>R9-9</h3>
+                            <h6 style="visibility: hidden"> SIDEWALK CLOSED R9-9 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R9-11.svg" alt="">
+                        <div class="details">
+                            <h3>R9-11 (L)</h3>
+                            <h6 style="visibility: hidden"> SIDEWALK CLOSED AHEAD CROSS HERE LEFT R9-11 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R9-11 (R).svg" alt="">
+                        <div class="details">
+                            <h3>R9-11 (R)</h3>
+                            <h6 style="visibility: hidden"> SIDEWALK CLOSED AHEAD CROSS HERE RIGHT R9-11 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R9-11a.svg" alt="">
+                        <div class="details">
+                            <h3>R9-11a (L)</h3>
+                            <h6 style="visibility: hidden"> SIDEWALK CLOSED CROSS HERE LEFT R9-11A (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R9-11a (R).svg" alt="">
+                        <div class="details">
+                            <h3>R9-11a (R)</h3>
+                            <h6 style="visibility: hidden"> SIDEWALK CLOSED CROSS HERE RIGHT R9-11A (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-1.PNG" alt="">
+                        <div class="details">
+                            <h3>R3-1</h3>
+                            <h6 style="visibility: hidden"> NO RIGHT TURN R3-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/R3-2.png" alt="">
+                        <div class="details">
+                            <h3>R3-2</h3>
+                            <h6 style="visibility: hidden"> NO LEFT TURN R3-2 </h6>                            
+                        </div>
+                    </div>
+
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-4.png" alt="">
+                        <div class="details">
+                            <h3>R3-4</h3>
+                            <h6 style="visibility: hidden"> NO UTURN R3-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-18.svg" alt="">
+                        <div class="details">
+                            <h3>R3-18</h3>
+                            <h6 style="visibility: hidden"> NO LEFT UTURN R3-18 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD-CA_R13A.svg" alt="">
+                        <div class="details">
+                            <h3>R13a</h3>
+                            <h6 style="visibility: hidden"> NO RIGHT TURN ON RED R13A </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD-CA_R13B.svg" alt="">
+                        <div class="details">
+                            <h3>R13b</h3>
+                            <h6 style="visibility: hidden"> NO LEFT TURN ON RED R13B </h6>                            
+                        </div>
+                    </div>
+                    
+                   
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-7.svg" alt="">
+                        <div class="details">
+                            <h3>R4-7</h3>
+                            <h6 style="visibility: hidden"> KEEP RIGHT R4-7 </h6>                            
+                        </div>
+                    </div>
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-7a.svg" alt="">
+                        <div class="details">
+                            <h3>R4-7a</h3>
+                            <h6 style="visibility: hidden"> KEEP RIGHT R4-7A </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-8.svg" alt="">
+                        <div class="details">
+                            <h3>R4-8</h3>
+                            <h6 style="visibility: hidden"> KEEP LEFT R4-8 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-8a.svg" alt="">
+                        <div class="details">
+                            <h3>R4-8a</h3>
+                            <h6 style="visibility: hidden"> KEEP LEFT R4-8A </h6>                            
+                        </div>
+                    </div>
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-5L.svg" alt="">
+                        <div class="details">
+                            <h3>R3-5 (L)</h3>
+                            <h6 style="visibility: hidden">LEFT TURN ONLY R3-5 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-5R.svg" alt="">
+                        <div class="details">
+                            <h3>R3-5 (R)</h3>
+                            <h6 style="visibility: hidden"> RIGHT TURN ONLY R3-5 (R)</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-6L.svg" alt="">
+                        <div class="details">
+                            <h3>R3-6 (L)</h3>
+                            <h6 style="visibility: hidden"> STRAIGHT LEFT TURN R3-6 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-6R.svg" alt="">
+                        <div class="details">
+                            <h3>R3-6 (R)</h3>
+                            <h6 style="visibility: hidden"> STRAIGHT RIGHT TURN R3-6 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R8-8.svg" alt="">
+                        <div class="details">
+                            <h3>R8-8</h3>
+                            <h6 style="visibility: hidden"> DO NOT STOP ON TRACKS R8-8 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R15-1.svg" alt="">
+                        <div class="details">
+                            <h3>R15-1</h3>
+                            <h6 style="visibility: hidden"> RAILROAD CROSSING R15-1 </h6>                            
+                        </div>
+                    </div>
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-1.png" alt="">
+                        <div class="details">
+                            <h3>R1-1</h3>
+                            <h6 style="visibility: hidden"> STOP R1-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-2_(alternative_dimensions).svg" alt="">
+                        <div class="details">
+                            <h3>R1-2</h3>
+                            <h6 style="visibility: hidden"> YIELD R1-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-2aP.svg" alt="">
+                        <div class="details">
+                            <h3>R1-2aP</h3>
+                            <h6 style="visibility: hidden"> TO ONCOMING TRAFFIC R1-2aP </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R5-1.png" alt="">
+                        <div class="details">
+                            <h3>R5-1</h3>
+                            <h6 style="visibility: hidden"> DO NOT ENTER R5-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R5-1a.png" alt="">
+                        <div class="details">
+                            <h3>R5-1a</h3>
+                            <h6 style="visibility: hidden"> WRONG WAY R5-1a </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/M4-4.svg" alt="">
+                        <div class="details">
+                            <h3>M4-4</h3>
+                            <h6 style="visibility: hidden"> TRUCK M4-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W4-1_(temporary).svg" alt="">
+                        <div class="details">
+                            <h3>W4-1 (R)</h3>
+                            <h6 style="visibility: hidden"> MERGE RIGHT W4-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW4-1L.svg" alt="">
+                        <div class="details">
+                            <h3>W4-1 (L)</h3>
+                            <h6 style="visibility: hidden"> MERGE LEFT W4-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW4-3L.svg" alt="">
+                        <div class="details">
+                            <h3>W4-3 (L)</h3>
+                            <h6 style="visibility: hidden"> LEFT LANE AHEAD W4-3 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW4-3R.svg" alt="">
+                        <div class="details">
+                            <h3>W4-3 (R)</h3>
+                            <h6 style="visibility: hidden"> RIGHT LANE AHEAD W4-3 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_CW24-1L.svg" alt="">
+                        <div class="details">
+                            <h3>W24-1(L)</h3>
+                            <h6 style="visibility: hidden"> LEFT RIGHT ROAD W24-1 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW24-1R.svg" alt="">
+                        <div class="details">
+                            <h3>W24-1(R)</h3>
+                            <h6 style="visibility: hidden"> RIGHT LEFT ROAD W24-1 (R) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW3-2A.svg" alt="">
+                        <div class="details">
+                            <h3>W3-2A</h3>
+                            <h6 style="visibility: hidden"> YIELD AHEAD W3-2A </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW8-24.svg" alt="">
+                        <div class="details">
+                            <h3>W8-24</h3>
+                            <h6 style="visibility: hidden"> STEEL PLACE AHEAD W8-24 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW9-3.svg" alt="">
+                        <div class="details">
+                            <h3>W9-3</h3>
+                            <h6 style="visibility: hidden"> CENTER LANE CLOSED AHEAD W9-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW8-11.svg" alt="">
+                        <div class="details">
+                            <h3>W8-11, C41 (CA)</h3>
+                            <h6 style="visibility: hidden"> UNEVEN LANES W8-11 C41 (CA)</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW21-1.svg" alt="">
+                        <div class="details">
+                            <h3>W21-1</h3>
+                            <h6 style="visibility: hidden"> WORKERS DIG AHEAD W21-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW21-2.svg" alt="">
+                        <div class="details">
+                            <h3>W21-2</h3>
+                            <h6 style="visibility: hidden"> FRESH OIL W21-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW22-1.svg" alt="">
+                        <div class="details">
+                            <h3>W22-1</h3>
+                            <h6 style="visibility: hidden"> BLASTING ZONE AHEAD W22-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW22-2.svg" alt="">
+                        <div class="details">
+                            <h3>W22-2</h3>
+                            <h6 style="visibility: hidden"> TURN OFF 2-WAY RADIO AND CELL PHONE W22-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW22-3.svg" alt="">
+                        <div class="details">
+                            <h3>W22-3</h3>
+                            <h6 style="visibility: hidden"> END BLASTING ZONE W22-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW23-1.svg" alt="">
+                        <div class="details">
+                            <h3>W23-1</h3>
+                            <h6 style="visibility: hidden"> SLOW TRAFFIC AHEAD W23-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW23-2.svg" alt="">
+                        <div class="details">
+                            <h3>W23-2</h3>
+                            <h6 style="visibility: hidden"> NEW TRAFFIC PATTERN AHEAD W23-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW6-3.svg" alt="">
+                        <div class="details">
+                            <h3>W6-3</h3>
+                            <h6 style="visibility: hidden"> TWO WAY TRAFFIC W6-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW6-4.svg" alt="">
+                        <div class="details">
+                            <h3>W6-4</h3>
+                            <h6 style="visibility: hidden"> TWO WAY TRAFFIC W6-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_CW21-7.svg" alt="">
+                        <div class="details">
+                            <h3>W21-7</h3>
+                            <h6 style="visibility: hidden"> UTILITY WORK AHEAD W21-7 </h6>                            
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-4.png" alt="">
+                        <div class="details">
+                            <h3>R1-4</h3>
+                            <h6 style="visibility: hidden"> ALL WAY R1-4 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-5L.svg" alt="">
+                        <div class="details">
+                            <h3>R1-5(L)</h3>
+                            <h6 style="visibility: hidden"> YIELD HERE TO PEDESTRIAN R1-5 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-5aL.svg" alt="">
+                        <div class="details">
+                            <h3>R1-5a(L)</h3>
+                            <h6 style="visibility: hidden"> YIELD HERE TO PEDESTRIAN R1-5A (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-5bL.svg" alt="">
+                        <div class="details">
+                            <h3>R1-5b(L)</h3>
+                            <h6 style="visibility: hidden"> STOP HERE FOR PEDESTRIAN R1-5B (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-5cL.svg" alt="">
+                        <div class="details">
+                            <h3>R1-5c(L)</h3>
+                            <h6 style="visibility: hidden"> STOP HERE FOR PEDESTRIAN R1-5C (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-6_(yellow).svg" alt="">
+                        <div class="details">
+                            <h3>R1-6</h3>
+                            <h6 style="visibility: hidden"> YIELD TO PEDESTRIAN WITH CROSSWALK R1-6 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-6a_(yellow).svg" alt="">
+                        <div class="details">
+                            <h3>R1-6a</h3>
+                            <h6 style="visibility: hidden"> STOP FOR PEDESTRIAN WITH CROSSWALK R1-6A </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-6b.svg" alt="">
+                        <div class="details">
+                            <h3>R1-6b</h3>
+                            <h6 style="visibility: hidden"> YIELD TO PEDESTRIAN WITH CROSSWALK R1-6B </h6>                            
+                        </div>
+                    </div>
+
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-6c.svg" alt="">
+                        <div class="details">
+                            <h3>R1-6c</h3>
+                            <h6 style="visibility: hidden"> STOP FOR PEDESTRIAN WITH CROSSWALK R1-6c </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-7.svg" alt="">
+                        <div class="details">
+                            <h3>R1-7</h3>
+                            <h6 style="visibility: hidden"> WAIT ON STOP R1-7 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-8.svg" alt="">
+                        <div class="details">
+                            <h3>R1-8</h3>
+                            <h6 style="visibility: hidden"> GO ON SLOW R1-8 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-9.svg" alt="">
+                        <div class="details">
+                            <h3>R1-9</h3>
+                            <h6 style="visibility: hidden"> YIELD TO PEDESTRIAN R1-9 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-9a.svg" alt="">
+                        <div class="details">
+                            <h3>R1-9a</h3>
+                            <h6 style="visibility: hidden"> STOP FOR PEDESTRIAN R1-9a </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R1-10P.svg" alt="">
+                        <div class="details">
+                            <h3>R1-10P</h3>
+                            <h6 style="visibility: hidden"> EXCEPT RIGHT TURN R1-10P </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R2-5P.svg" alt="">
+                        <div class="details">
+                            <h3>R2-5P</h3>
+                            <h6 style="visibility: hidden"> UNLESS OTHERWISE POSTED R2-5P </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R2-10.svg" alt="">
+                        <div class="details">
+                            <h3>R2-10</h3>
+                            <h6 style="visibility: hidden"> BEGIN HIGHER FINES ZONE R2-10 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R2-11.svg" alt="">
+                        <div class="details">
+                            <h3>R2-11</h3>
+                            <h6 style="visibility: hidden"> END HIGHER FINES ZONE R2-11 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-3.PNg" alt="">
+                        <div class="details">
+                            <h3>R3-3</h3>
+                            <h6 style="visibility: hidden"> NO TURNS R3-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-5a.svg" alt="">
+                        <div class="details">
+                            <h3>R3-5a</h3>
+                            <h6 style="visibility: hidden"> STRAIGHT ONLY R3-5a </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-5bP.svg" alt="">
+                        <div class="details">
+                            <h3>R3-5bP</h3>
+                            <h6 style="visibility: hidden"> LEFT LANE R3-5bP </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-5eP.svg" alt="">
+                        <div class="details">
+                            <h3>R3-5eP</h3>
+                            <h6 style="visibility: hidden"> CENTER LANE R3-5EP </h6>                            
+                        </div>
+                    </div>
+                    
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-5FP.svg" alt="">
+                        <div class="details">
+                            <h3>R3-5fP</h3>
+                            <h6 style="visibility: hidden"> RIGHT LANE R3-5FP </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-5gP.svg" alt="">
+                        <div class="details">
+                            <h3>R3-5gP</h3>
+                            <h6 style="visibility: hidden"> BUS LANE R3-5gP </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-8b.svg" alt="">
+                        <div class="details">
+                            <h3>R3-8b</h3>
+                            <h6 style="visibility: hidden"> LEFT STRAIGHT RIGHT ONLY R3-8B </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-8aL.svg" alt="">
+                        <div class="details">
+                            <h3>R3-8aL</h3>
+                            <h6 style="visibility: hidden"> DOUBLE LEFT STRAIGHT RIGHT ONLY R3-8Al </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-9a.svg" alt="">
+                        <div class="details">
+                            <h3>R3-9a</h3>
+                            <h6 style="visibility: hidden"> CENTER LANE LEFT RIGHT ONLY R3-9a </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R3-9b.svg" alt="">
+                        <div class="details">
+                            <h3>R3-9b</h3>
+                            <h6 style="visibility: hidden"> CENTER LANE LEFT RIGHT ONLY R3-9a </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-1.svg" alt="">
+                        <div class="details">
+                            <h3>R4-1</h3>
+                            <h6 style="visibility: hidden"> DO NOT PASS R4-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-2.svg" alt="">
+                        <div class="details">
+                            <h3>R4-2</h3>
+                            <h6 style="visibility: hidden"> PASS WITH CARE R4-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-3.svg" alt="">
+                        <div class="details">
+                            <h3>R4-3</h3>
+                            <h6 style="visibility: hidden"> SLOWER TRAFFIC KEEP RIGHT R4-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-5.svg" alt="">
+                        <div class="details">
+                            <h3>R4-5</h3>
+                            <h6 style="visibility: hidden"> TRUCKS USE RIGHT LANE R4-5 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-7b.svg" alt="">
+                        <div class="details">
+                            <h3>R4-7b</h3>
+                            <h6 style="visibility: hidden"> KEEP RIGHT R4-7b </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-8b.svg" alt="">
+                        <div class="details">
+                            <h3>R4-8b</h3>
+                            <h6 style="visibility: hidden"> KEEP LEFT R4-8b </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-9.svg" alt="">
+                        <div class="details">
+                            <h3>R4-9</h3>
+                            <h6 style="visibility: hidden"> STAY IN LANE R4-9 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-16.svg" alt="">
+                        <div class="details">
+                            <h3>R4-16</h3>
+                            <h6 style="visibility: hidden"> KEEP RIGHT EXCEPT TO PASS R4-16 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-17.svg" alt="">
+                        <div class="details">
+                            <h3>R4-17</h3>
+                            <h6 style="visibility: hidden"> DO NOT DRIVE ON SHOULDER R4-17 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R4-18.svg" alt="">
+                        <div class="details">
+                            <h3>R4-18</h3>
+                            <h6 style="visibility: hidden"> DO NOT PASS ON SHOULDER R4-18 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R5-1b.svg" alt="">
+                        <div class="details">
+                            <h3>R5-1b</h3>
+                            <h6 style="visibility: hidden"> BIKE WRONG WAY R5-1B </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R5-2.png" alt="">
+                        <div class="details">
+                            <h3>R5-2</h3>
+                            <h6 style="visibility: hidden"> NO TRUCK R5-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R5-6.svg" alt="">
+                        <div class="details">
+                            <h3>R5-6</h3>
+                            <h6 style="visibility: hidden"> NO BIKE R5-6 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R6-1L.svg" alt="">
+                        <div class="details">
+                            <h3>R6-1(L)</h3>
+                            <h6 style="visibility: hidden"> ONE WAY LEFT R6-1 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R6-2L.svg" alt="">
+                        <div class="details">
+                            <h3>R6-2(L)</h3>
+                            <h6 style="visibility: hidden"> ONE WAY LEFT R6-2 (L) </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R6-3.svg" alt="">
+                        <div class="details">
+                            <h3>R6-3</h3>
+                            <h6 style="visibility: hidden"> DIVIDED HIGHWAY R6-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R7-1.svg" alt="">
+                        <div class="details">
+                            <h3>R7-1</h3>
+                            <h6 style="visibility: hidden"> NO PARKING ANY TIME R7-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R7-2.svg" alt="">
+                        <div class="details">
+                            <h3>R7-2</h3>
+                            <h6 style="visibility: hidden"> NO PARKING 8:30 AM TO 5:30 PM R7-2 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R8-3.png" alt="">
+                        <div class="details">
+                            <h3>R8-3</h3>
+                            <h6 style="visibility: hidden"> NO PARKING R8-3 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R11-3a.svg" alt="">
+                        <div class="details">
+                            <h3>R11-3a</h3>
+                            <h6 style="visibility: hidden"> ROAD CLOSED MILES AHEAD LOCAL TRAFFIC ONLY R11-3A </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_R14-1.svg" alt="">
+                        <div class="details">
+                            <h3>R14-1</h3>
+                            <h6 style="visibility: hidden"> TRUCK ROUTE R14-1 </h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-1.svg" alt="">
+                        <div class="details">
+                            <h3>W8-1</h3>
+                            <h6 style="visibility: hidden"> BUMP W8-1</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-2.svg" alt="">
+                        <div class="details">
+                            <h3>W8-2</h3>
+                            <h6 style="visibility: hidden"> DIP W8-2</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-3.svg" alt="">
+                        <div class="details">
+                            <h3>W8-3</h3>
+                            <h6 style="visibility: hidden"> PAVEMENT ENDS W8-3</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-4.svg" alt="">
+                        <div class="details">
+                            <h3>W8-4</h3>
+                            <h6 style="visibility: hidden"> SOFT SHOULDER W8-4</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-5.svg" alt="">
+                        <div class="details">
+                            <h3>W8-5</h3>
+                            <h6 style="visibility: hidden"> SLIPPERY ROAD W8-5</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-7.svg" alt="">
+                        <div class="details">
+                            <h3>W8-7</h3>
+                            <h6 style="visibility: hidden"> LOOSE GRAVEL W8-7</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-8.svg" alt="">
+                        <div class="details">
+                            <h3>W8-8</h3>
+                            <h6 style="visibility: hidden"> ROUGH ROAD W8-8</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-11.svg" alt="">
+                        <div class="details">
+                            <h3>W8-11</h3>
+                            <h6 style="visibility: hidden"> UNEVEN LANE W8-11</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-18.svg" alt="">
+                        <div class="details">
+                            <h3>W8-18</h3>
+                            <h6 style="visibility: hidden"> ROAD MAY FLOOD W8-18</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-23.svg" alt="">
+                        <div class="details">
+                            <h3>W8-23</h3>
+                            <h6 style="visibility: hidden"> NO SHOULDER W8-23</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W8-25.svg" alt="">
+                        <div class="details">
+                            <h3>W8-25</h3>
+                            <h6 style="visibility: hidden"> SHOULDER ENDS W8-25</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W12-2.svg" alt="">
+                        <div class="details">
+                            <h3>W12-2</h3>
+                            <h6 style="visibility: hidden"> LOW CLEARANCE 12'-6" W12-2</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/MUTCD_W14-3.svg" alt="">
+                        <div class="details">
+                            <h3>W14-3</h3>
+                            <h6 style="visibility: hidden"> NO PASSING ZONE W14-3</h6>                            
+                        </div>
+                    </div>
+
+                    <div class="sign">
+                        <img src="img/C27.svg" alt="">
+                        <div class="details">
+                            <h3>C27 (CA)</h3>
+                            <h6 style="visibility: hidden"> OPEN TRENCH C27 (CA)</h6>                            
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+                    
+                    
+
+
+
+
+
+
+                </div>
+            
+            </section>
+                
+
+            
+                    
+            
+        </div>
+
+        <canvas
+        id="c" 
+        width="1150" 
+        height="850" 
+        style="border: 1px solid black"     
+        ></canvas>     
+
+            
+
+    </div>
+    
+
+
+
+    
+    
+    <script src="fabric.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 30px;
+    padding: auto;
+    
+}
+
+.search-and-signs{
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.drawingpalette{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.container{
+    width: 170px;
+    height: 780px;
+    justify-content: left;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgb(0,0,0,0.6,);
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+    display:none;
+}
+
+
+.container form{
+    justify-content: left;
+    width: 100%;
+    border: 1px solid rgb(82, 74, 235);
+    border-radius: 4px;
+
+}
+
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+    overflow-y: scroll;
+
+}
+
+.container form i{
+    padding-left: 10px;
+}
+
+.sign{
+    display:flex;
+    align-items:center
+    padding-top: 5px:
+    padding-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.sign img{
+    width: 100px;
+    height: 100px;
+    padding-left: 5px;
+
+    align-items: center;
+    justify-content: center;
+    object-fit:contain;
+}
+
+
+.sign .details h3{
+    font-size: 14px;
+    display: inline-flex;
+    padding-top: 27px;
+    padding-left: 5px;
+    
+}
+
+
+
+   
+.searchbar{
+    padding-bottom: 10px;
+    align-items: center;
+}
